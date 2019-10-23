@@ -1,8 +1,8 @@
 create database projetodb;
 
-\c database_serasa
+\c projetodb
 
-create table user (
+create table users (
     id serial not null PRIMARY KEY,
     name varchar(100) not null,
     cpf varchar(20) not null,

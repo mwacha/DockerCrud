@@ -9,10 +9,10 @@
 		<version>2.2.0.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
+	<groupId>br.com.marcelowacha</groupId>
 	<artifactId>DockerCrud</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>DockerCrud</name>
+	<name>dockercrud</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
