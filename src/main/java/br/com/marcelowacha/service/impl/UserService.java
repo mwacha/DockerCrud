@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.apache.commons.collections4.IteratorUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -11,6 +12,7 @@ import br.com.marcelowacha.domain.User;
 import br.com.marcelowacha.repository.UserRepository;
 import br.com.marcelowacha.service.IUserService;
 
+@Service
 public class UserService implements IUserService {
 	
 	@Autowired

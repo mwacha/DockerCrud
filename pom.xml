@@ -10,7 +10,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.marcelowacha</groupId>
-	<artifactId>DockerCrud</artifactId>
+	<artifactId>dockercrud</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>dockercrud</name>
 	<description>Demo project for Spring Boot</description>
