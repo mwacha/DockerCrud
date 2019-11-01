@@ -20,7 +20,9 @@ import org.springframework.data.elasticsearch.annotations.Document;
 public class User implements Serializable {
 
 	private static final long serialVersionUID = -4755435530979850934L;
-
+	/*int indexWithoutRefresh = 1;
+	int index = 0;
+	int refresh = 1;*/
 	@Id
 	@Column(name = "id")
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
