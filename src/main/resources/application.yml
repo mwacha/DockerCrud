@@ -1,6 +1,6 @@
 spring:  
   datasource:
-    url: jdbc:postgresql://db:5432/projetodb
+    url: jdbc:postgresql://localhost:5555/projetodb
     username: postgres
     password: postgres
   jpa:
@@ -15,5 +15,22 @@ spring:
         show-sql: true
         temp:
           use_jdbc_metadata_defaults: false
+  data:
+    elasticsearch:
+      repositories:
+        enabled: true
+      cluster-nodes : localhost:9300
+      cluster-name: elasticsearch
+  main:
+     allow-bean-definition-overriding: true
 server:
   port: 9005
+  application:
+    name: DockerElastic
+  
+# Local Elasticsearch config
+elasticsearch:
+  index:
+    name: user_index
+  user:
+    type: user

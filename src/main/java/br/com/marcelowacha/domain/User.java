@@ -12,9 +12,11 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import org.springframework.data.elasticsearch.annotations.Document;
+
 @Entity
 @Table(name="users")
-
+@Document(indexName = "my_index", type = "user")
 public class User implements Serializable {
 
 	private static final long serialVersionUID = -4755435530979850934L;
