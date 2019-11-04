@@ -1,5 +1,6 @@
 package br.com.marcelowacha.controller;
 
+import java.util.Calendar;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -36,7 +37,7 @@ public class UserController {
 	@RequestMapping(value="/incluir", method=RequestMethod.POST, consumes=MediaType.APPLICATION_JSON_VALUE)
 	public @ResponseBody ResponseEntity <User> incluir(@RequestBody User user,
 			HttpServletRequest httpServletRequest){
-		
+		user.setCreated(Calendar.getInstance());
 		user = userService.salvar(user);
 				
 		return new ResponseEntity<User>(user,HttpStatus.OK);

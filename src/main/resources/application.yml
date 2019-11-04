@@ -18,9 +18,7 @@ spring:
   data:
     elasticsearch:
       repositories:
-        enabled: true
-      cluster-nodes : localhost:9300
-      cluster-name: elasticsearch
+        enabled: true    
   main:
      allow-bean-definition-overriding: true
 server:
@@ -34,3 +32,7 @@ elasticsearch:
     name: user_index
   user:
     type: user
+  cluster-name: elasticsearch
+  cluster-nodes : localhost:9300
+  host: localhost
+  port: 9300

@@ -1,0 +1,54 @@
+JvmtiExport can_access_local_variables 0
+JvmtiExport can_hotswap_or_post_breakpoint 0
+JvmtiExport can_post_on_exceptions 0
+# 482 ciObject found
+ciMethod java/lang/Object <init> ()V 4097 1 973081 0 0
+ciMethod java/lang/Object getClass ()Ljava/lang/Class; 2049 1 256 0 -1
+ciMethod java/lang/Object hashCode ()I 3073 1 384 0 -1
+ciMethod java/lang/Object equals (Ljava/lang/Object;)Z 113 1 22783 0 -1
+ciMethod java/lang/Object clone ()Ljava/lang/Object; 3073 1 384 0 -1
+ciMethod java/lang/String equals (Ljava/lang/Object;)Z 2569 8841 4280 0 -1
+ciMethod java/lang/String startsWith (Ljava/lang/String;I)Z 4097 24505 4707 0 416
+ciMethod java/lang/String startsWith (Ljava/lang/String;)Z 3297 1 307945 0 352
+ciMethod java/lang/reflect/AnnotatedElement getDeclaredAnnotations ()[Ljava/lang/annotation/Annotation; 0 0 1 0 -1
+ciMethod java/lang/Class isAssignableFrom (Ljava/lang/Class;)Z 2049 1 256 0 -1
+ciMethod java/lang/Class isInterface ()Z 2049 1 256 0 -1
+ciMethod java/lang/Class isArray ()Z 2049 1 256 0 -1
+ciMethod java/lang/Class getName ()Ljava/lang/String; 3073 1 226973 0 96
+ciMethod java/lang/Class getName0 ()Ljava/lang/String; 2089 1 261 0 -1
+ciMethod java/lang/Class getSuperclass ()Ljava/lang/Class; 2049 1 256 0 -1
+ciMethod java/lang/Class getInterfaces ()[Ljava/lang/Class; 889 1 6148 0 1600
+ciMethod java/lang/Class getInterfaces0 ()[Ljava/lang/Class; 3081 1 385 0 -1
+ciMethod java/lang/Class getComponentType ()Ljava/lang/Class; 4113 1 514 0 -1
+ciMethod java/lang/Class getMethods ()[Ljava/lang/reflect/Method; 1969 1 1019 0 -1
+ciMethod java/lang/Class reflectionData ()Ljava/lang/Class$ReflectionData; 3073 1 5585 0 1344
+ciMethod java/lang/Class newReflectionData (Ljava/lang/ref/SoftReference;I)Ljava/lang/Class$ReflectionData; 641 1 857 0 0
+ciMethod java/lang/Class isAnnotationPresent (Ljava/lang/Class;)Z 2057 1 506 0 -1
+ciMethod java/lang/ref/Reference get ()Ljava/lang/Object; 1025 1 128 0 -1
+ciMethod java/lang/ref/Reference <init> (Ljava/lang/Object;)V 2377 1 18323 0 0
+ciMethod java/lang/ref/Reference <init> (Ljava/lang/Object;Ljava/lang/ref/ReferenceQueue;)V 2097 1 29138 0 128
+ciMethod java/lang/ref/SoftReference <init> (Ljava/lang/Object;)V 1145 1 3357 0 0
+ciMethod java/lang/ref/SoftReference get ()Ljava/lang/Object; 2049 1 35917 0 96
+ciMethod java/util/Map get (Ljava/lang/Object;)Ljava/lang/Object; 0 0 1 0 -1
+ciMethod java/util/Map put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 0 0 1 0 -1
+ciMethod java/util/Map computeIfAbsent (Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object; 9 1 1 0 -1
+ciMethod java/lang/reflect/Method getDeclaringClass ()Ljava/lang/Class; 13017 1 1627 0 0
+ciMethod java/lang/reflect/Method getName ()Ljava/lang/String; 6825 1 853 0 0
+ciMethod java/lang/reflect/Method getModifiers ()I 2497 1 312 0 0
+ciMethod java/lang/reflect/Method getReturnType ()Ljava/lang/Class; 17649 1 2206 0 -1
+ciMethod java/lang/reflect/Method getParameterTypes ()[Ljava/lang/Class; 593 1 37014 0 -1
+ciMethod java/lang/reflect/Method getParameterCount ()I 2049 1 5623 0 -1
+ciMethod java/lang/reflect/Method isBridge ()Z 145 1 28592 0 -1
+ciMethod java/lang/annotation/Annotation annotationType ()Ljava/lang/Class; 0 0 1 0 -1
+ciMethod java/lang/invoke/DirectMethodHandle internalMemberName (Ljava/lang/Object;)Ljava/lang/Object; 2065 1 48922 0 -1
+ciMethod java/lang/StringBuilder <init> ()V 1849 1 68462 0 -1
+ciMethod java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder; 3137 1 250147 0 -1
+ciMethod java/lang/StringBuilder toString ()Ljava/lang/String; 1849 1 82042 0 -1
+ciMethod sun/misc/Unsafe compareAndSwapObject (Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z 2049 1 256 0 -1
+ciMethod java/lang/Iterable forEach (Ljava/util/function/Consumer;)V 809 1073 101 0 -1
+ciMethod java/util/List size ()I 0 0 1 0 -1
+ciMethod java/util/List isEmpty ()Z 0 0 1 0 -1
+ciMethod java/util/List add (Ljava/lang/Object;)Z 0 0 1 0 -1
+ciMethod java/util/List get (I)Ljava/lang/Object; 0 0 1 0 -1
+ciMethod java/util/AbstractCollection contains (Ljava/lang/Object;)Z 0 0 1 0 -1
+ciMethod java/util/AbstractCollection 

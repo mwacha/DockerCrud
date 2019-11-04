@@ -19,13 +19,13 @@ import org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate;
 import org.springframework.data.elasticsearch.repository.config.EnableElasticsearchRepositories;
 
 @Configuration
-@EnableElasticsearchRepositories(basePackages = "br.com.marcelowacha.repository")
-@ComponentScan(basePackages = { "br.com.marcelowacha.service" })
+//@EnableElasticsearchRepositories(basePackages = "br.com.marcelowacha.repository")
+//@ComponentScan(basePackages = { "br.com.marcelowacha.service" })
 public class Config {
 
-	@Value("${elasticsearch.host:localhost}")
+	@Value("${elasticsearch.host}")
 	public String host;
-	@Value("${elasticsearch.port:9300}")
+	@Value("${elasticsearch.port}")
 	public int port;
 	@Value("${elasticsearch.cluster-name}")
 	public String clusterName;
@@ -35,7 +35,9 @@ public class Config {
 	@Bean
 	public Client client() {
 		Settings elasticsearchSettings = Settings.builder().put("client.transport.sniff", true)
-				.put("path.home", clusterNodes).put("cluster.name", clusterName).build();
+				.put("path.home", clusterNodes)
+				.put("cluster.name", clusterName)
+				.build();
 		TransportClient client = new PreBuiltTransportClient(elasticsearchSettings);
 		try {
 			client.addTransportAddress(new TransportAddress(InetAddress.getByName(host), port));
